@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(home: Scaffold(body: Center(child: Text('Bingeflix')),),));
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(color: Color.fromARGB(200, 0, 80, 80)),
+          child: const Center(
+            child: Text('Bingeflix')
+          )
+        ),
+      ),
+    ),
+  );
 }
-
