@@ -5,10 +5,17 @@ void main() {
     MaterialApp(
       home: Scaffold(
         body: Container(
-          decoration: BoxDecoration(color: Color.fromARGB(200, 0, 80, 80)),
+          color: const Color.fromARGB(255, 0, 150, 136),
           child: const Center(
-            child: Text('Bingeflix')
-          )
+            child: Text(
+              'BINGEFLIX',
+              style: TextStyle(
+                fontSize: 80,
+                color: Colors.black,
+                fontFamily: 'BebasNeue',
+              ),
+            ),
+          ),
         ),
       ),
     ),
