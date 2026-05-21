@@ -16,7 +16,9 @@ class _AuthScreenState extends State<AuthScreen> {
   final _passwordController = TextEditingController();
   final _repeatPasswordController = TextEditingController();
 
+  // true = login form, false = registration form.
   var _isLogin = true;
+  // Used to disable buttons and show a loading spinner during Firebase calls.
   var _isAuthenticating = false;
 
   @override
@@ -29,12 +31,14 @@ class _AuthScreenState extends State<AuthScreen> {
 
   void _toggleMode() {
     setState(() {
+      // Switches between the login and register versions of the same screen.
       _isLogin = !_isLogin;
       _repeatPasswordController.clear();
     });
   }
 
   Future<void> _submit() async {
+    // Stop here if any TextFormField validator returns an error message.
     final isValid = _formKey.currentState!.validate();
 
     if (!isValid) {
@@ -44,6 +48,7 @@ class _AuthScreenState extends State<AuthScreen> {
     final email = _emailController.text.trim();
     final password = _passwordController.text;
 
+    // The form is valid, so show loading while waiting for Firebase.
     setState(() {
       _isAuthenticating = true;
     });
@@ -67,12 +72,14 @@ class _AuthScreenState extends State<AuthScreen> {
         return;
       }
 
+      // Firebase returns helpful errors such as wrong password or email in use.
       ScaffoldMessenger.of(context).clearSnackBars();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(error.message ?? 'Authentication failed.')),
       );
     } finally {
       if (mounted) {
+        // Always remove the spinner after Firebase finishes or throws an error.
         setState(() {
           _isAuthenticating = false;
         });
@@ -103,6 +110,7 @@ class _AuthScreenState extends State<AuthScreen> {
   String? _validateRepeatPassword(String? value) {
     final repeatPassword = value ?? '';
 
+    // Registration asks for the password twice to catch typing mistakes.
     if (repeatPassword != _passwordController.text) {
       return 'Passwords must match.';
     }

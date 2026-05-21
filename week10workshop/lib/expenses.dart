@@ -27,7 +27,7 @@ class Expenses extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              // Signing out changes the auth stream, so AuthGate shows login again.
+              // Signing out updates AuthGate, which then shows AuthScreen again.
               FirebaseAuth.instance.signOut();
             },
             icon: const Icon(Icons.logout),
