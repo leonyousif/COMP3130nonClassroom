@@ -18,3 +18,10 @@ The app currently launches `Screen6` from `lib/main.dart`.
 - `lib/main.dart`: all Week 1 screen implementations
 - `assets/fonts/BebasNeue-Regular.ttf`: font used by the styled text screen
 - `pubspec.yaml`: Flutter project configuration and font declaration
+
+## Revisions
+
+- Implemented the required Week 1 Flutter screens from the "Screens to Implement" section.
+- Added separate `Screen1` to `Screen6` widgets for Scaffold, Center, Container, styled text, and AppBar examples.
+- Added the Bebas Neue font asset and declared it in `pubspec.yaml`.
+- Added documentation comments to explain what each screen/widget demonstrates.

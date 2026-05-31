@@ -10,3 +10,8 @@ This folder contains Week 3 UX research and survey work focused on Duolingo.
 - `Week 3 Question 2`: saved response or notes artifact
 
 This week is focused on research and analysis rather than Flutter app code.
+
+## Revisions
+
+- Added a README to describe the Week 3 UX research and Duolingo analysis files.
+- Documented the survey, spreadsheet, PDF analysis, and saved question artifacts.

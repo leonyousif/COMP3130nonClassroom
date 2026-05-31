@@ -19,3 +19,9 @@ This folder contains the Week 6 Flutter workshop project, building on the travel
 - `lib/widgets/new_expense.dart`: form for adding a new expense
 - `lib/widgets/expenses_list.dart`: expense list widget
 - `lib/widgets/expenses_item.dart`: expense card widget
+
+## Revisions
+
+- Documented the Week 6 travel expenses app and its add-expense workflow.
+- Fixed the generated widget test so it matches the actual Week 6 app.
+- Added documentation comments for the main screen, expense model, add-expense form, list, and card widgets.

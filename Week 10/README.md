@@ -18,3 +18,8 @@ This folder contains the Week 10 Flutter workshop project. It extends the travel
 - `lib/firebase_options.dart`: generated Firebase configuration
 - `lib/expenses.dart`: authenticated expenses screen
 - `lib/models/expenses_state.dart`: shared expense state
+
+## Revisions
+
+- Documented the Week 10 Firebase authentication version of the travel expenses app.
+- Added documentation comments for Firebase initialization, auth routing, login/register logic, Provider state, charting, forms, lists, cards, and delete actions.

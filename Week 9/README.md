@@ -18,3 +18,9 @@ This folder contains the Week 9 Flutter workshop project for the travel expenses
 - `lib/models/expense_calculations.dart`: helper logic for expense totals
 - `lib/widgets/chart.dart`: expense chart
 - `lib/widgets/new_expense.dart`: add-expense form
+
+## Revisions
+
+- Documented the Week 9 travel expenses app and its shared calculation/state structure.
+- Removed unused imports and deprecated theme settings reported by Flutter analysis.
+- Added documentation comments for Provider state, expense calculations, charting, forms, lists, cards, and delete actions.

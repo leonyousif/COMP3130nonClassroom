@@ -16,3 +16,8 @@ Open `week8workshop` before running Flutter commands:
 ```powershell
 cd "Week 8\week8workshop"
 ```
+
+## Revisions
+
+- Added a top-level README explaining that the Flutter project is inside `week8workshop`.
+- Documented the Week 8 Provider-based expense app structure.
