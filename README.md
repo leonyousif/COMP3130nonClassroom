@@ -23,4 +23,3 @@ Each week folder has its own README describing what that folder contains. For Fl
 
 - The weekly folders are intentionally kept separate so each workshop can be reviewed independently.
 - Some Flutter folders include generated platform files such as `android`, `ios`, `web`, `windows`, `macos`, and `linux`.
-- Week 8 now stores its Flutter project files directly inside the `Week 8` folder.
