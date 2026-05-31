@@ -3,11 +3,13 @@ import 'package:provider/provider.dart';
 import 'package:week9workshop/models/expense_model.dart';
 import 'package:week9workshop/models/expenses_state.dart';
 
+/// Card UI for one expense, including category icon and delete action.
 class ExpensesItem extends StatelessWidget {
   const ExpensesItem({super.key, required this.expense});
 
   final Expense expense;
 
+  /// Asks for confirmation before removing an expense from Provider state.
   Future<void> _confirmDeleteExpense(BuildContext context) async {
     final shouldDelete = await showDialog<bool>(
       context: context,

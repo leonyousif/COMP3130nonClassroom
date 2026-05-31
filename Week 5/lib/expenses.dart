@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travelexpenses/models/expense_model.dart';
 import 'package:travelexpenses/widgets/expenses_list.dart';
 
+/// Main stateful screen that stores and displays the sample expenses.
 class Expenses extends StatefulWidget {
   const Expenses({super.key});
 
@@ -12,6 +13,7 @@ class Expenses extends StatefulWidget {
 }
 
 class _Expenses extends State<Expenses> {
+  /// Hardcoded expenses used for the Week 5 list display.
   final List<Expense> _myExpenses = [
     Expense(
       name: 'Birthday Dinner',

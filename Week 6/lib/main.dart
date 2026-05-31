@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:week6workshop/expenses.dart';
 
+/// Starts the Week 6 travel expenses app with custom theme settings.
 void main() {
   runApp(
     MaterialApp(

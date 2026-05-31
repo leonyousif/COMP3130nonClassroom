@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:week6workshop/models/expense_model.dart';
 
+/// Form shown in a bottom sheet for creating a new expense.
 class NewExpense extends StatefulWidget {
   const NewExpense({super.key, required this.onAddExpense});
 
@@ -24,6 +25,7 @@ class _NewExpenseState extends State<NewExpense> {
     super.dispose();
   }
 
+  /// Opens the date picker and stores the selected date.
   void _presentDatePicker() async {
     final now = DateTime.now();
     final firstDate = DateTime(now.year - 2, now.month, now.day);
@@ -43,6 +45,7 @@ class _NewExpenseState extends State<NewExpense> {
     });
   }
 
+  /// Validates form fields, creates an Expense, and sends it to the parent.
   void _submitExpenseData() {
     final enteredAmount = double.tryParse(_amountController.text);
     final amountIsInvalid = enteredAmount == null || enteredAmount <= 0;

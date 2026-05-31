@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:week8workshop/models/expense_model.dart';
 import 'package:week8workshop/models/expenses_state.dart';
 
+/// Form shown in a bottom sheet for creating a new expense.
 class NewExpense extends StatefulWidget {
   const NewExpense({super.key});
 
@@ -25,6 +26,7 @@ class _NewExpenseState extends State<NewExpense> {
     super.dispose();
   }
 
+  /// Opens the date picker and stores the selected date.
   void _presentDatePicker() async {
     final now = DateTime.now();
     final firstDate = DateTime(now.year - 2, now.month, now.day);
@@ -44,6 +46,7 @@ class _NewExpenseState extends State<NewExpense> {
     });
   }
 
+  /// Validates input, creates an expense, and adds it to Provider state.
   void _submitExpenseData() {
     final enteredAmount = double.tryParse(_amountController.text);
     final amountIsInvalid = enteredAmount == null || enteredAmount <= 0;
@@ -78,6 +81,7 @@ class _NewExpenseState extends State<NewExpense> {
     Navigator.pop(context);
   }
 
+  /// Shows a validation message when the user submits incomplete input.
   void _showDialog(String message) {
     showDialog(
       context: context,

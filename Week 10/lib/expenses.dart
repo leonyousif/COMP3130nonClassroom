@@ -6,9 +6,11 @@ import 'package:week10workshop/widgets/chart.dart';
 import 'package:week10workshop/widgets/new_expense.dart';
 import 'package:week10workshop/widgets/expenses_list.dart';
 
+/// Main authenticated expenses screen with chart, list, and sign-out action.
 class Expenses extends StatelessWidget {
   const Expenses({super.key});
 
+  /// Opens a nearly full-height bottom sheet for entering a new expense.
   void _openAddExpenseOverlay(BuildContext context) {
     showModalBottomSheet(
       context: context,

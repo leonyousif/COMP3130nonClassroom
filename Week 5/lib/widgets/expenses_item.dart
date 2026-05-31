@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travelexpenses/models/expense_model.dart';
 
+/// Displays a single expense inside a card.
 class ExpensesItem extends StatelessWidget {
   final Expense expense;
 

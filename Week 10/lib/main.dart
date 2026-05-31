@@ -7,6 +7,7 @@ import 'package:week10workshop/expenses.dart';
 import 'package:week10workshop/firebase_options.dart';
 import 'package:week10workshop/models/expenses_state.dart';
 
+/// Initializes Firebase, configures Provider, and starts the Week 10 app.
 Future<void> main() async {
   // Required because Firebase initialization runs before runApp().
   WidgetsFlutterBinding.ensureInitialized();
@@ -150,6 +151,7 @@ Future<void> main() async {
   );
 }
 
+/// Chooses between the authentication screen and the expenses screen.
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});
 

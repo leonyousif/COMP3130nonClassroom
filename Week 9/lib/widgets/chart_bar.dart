@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// Visual bar used by the chart to represent one expense category.
 class ChartBar extends StatelessWidget {
   const ChartBar({
     super.key,

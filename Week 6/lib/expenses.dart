@@ -3,6 +3,7 @@ import 'package:week6workshop/models/expense_model.dart';
 import 'package:week6workshop/widgets/new_expense.dart';
 import 'package:week6workshop/widgets/expenses_list.dart';
 
+/// Main screen that manages the expense list and opens the add-expense form.
 class Expenses extends StatefulWidget {
   const Expenses({super.key});
 
@@ -13,6 +14,7 @@ class Expenses extends StatefulWidget {
 }
 
 class _ExpensesState extends State<Expenses> {
+  /// Starter expenses shown when the app first loads.
   final List<Expense> _registeredExpenses = [
     Expense(
       name: 'Birthday Dinner',
@@ -28,6 +30,7 @@ class _ExpensesState extends State<Expenses> {
     ),
   ];
 
+  /// Opens the modal bottom sheet where the user can enter a new expense.
   void _openAddExpenseOverlay() {
     showModalBottomSheet(
       context: context,
@@ -36,6 +39,7 @@ class _ExpensesState extends State<Expenses> {
     );
   }
 
+  /// Adds a submitted expense to the list and rebuilds the screen.
   void _addExpense(Expense expense) {
     setState(() {
       _registeredExpenses.add(expense);

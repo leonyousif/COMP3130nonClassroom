@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:week6workshop/models/expense_model.dart';
 
+/// Card UI for displaying the details of one expense.
 class ExpensesItem extends StatelessWidget {
   const ExpensesItem({super.key, required this.expense});
 

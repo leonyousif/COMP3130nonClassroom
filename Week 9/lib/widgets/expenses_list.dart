@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:week9workshop/models/expenses_state.dart';
 import 'package:week9workshop/widgets/expenses_item.dart';
 
+/// Watches Provider state and renders all current expenses in a list.
 class ExpensesList extends StatelessWidget {
   const ExpensesList({super.key});
 

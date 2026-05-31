@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+/// Starts the Week 1 app and displays the final workshop screen.
 void main() {
   runApp(const MyApp());
 }
 
+/// Root widget that selects which workshop screen is shown.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -16,6 +18,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+/// Demonstrates the simplest Flutter screen without a Scaffold.
 class Screen1 extends StatelessWidget {
   const Screen1({super.key});
 
@@ -25,6 +28,7 @@ class Screen1 extends StatelessWidget {
   }
 }
 
+/// Demonstrates a basic screen wrapped in a Scaffold.
 class Screen2 extends StatelessWidget {
   const Screen2({super.key});
 
@@ -36,6 +40,7 @@ class Screen2 extends StatelessWidget {
   }
 }
 
+/// Demonstrates centering content inside a Scaffold.
 class Screen3 extends StatelessWidget {
   const Screen3({super.key});
 
@@ -49,6 +54,7 @@ class Screen3 extends StatelessWidget {
   }
 }
 
+/// Demonstrates using a Container to set a background color.
 class Screen4 extends StatelessWidget {
   const Screen4({super.key});
 
@@ -65,6 +71,7 @@ class Screen4 extends StatelessWidget {
   }
 }
 
+/// Demonstrates styled text using the Bebas Neue font.
 class Screen5 extends StatelessWidget {
   const Screen5({super.key});
 
@@ -88,6 +95,7 @@ class Screen5 extends StatelessWidget {
   }
 }
 
+/// Final Week 1 screen combining an AppBar, background color, and styled text.
 class Screen6 extends StatelessWidget {
   const Screen6({super.key});
 

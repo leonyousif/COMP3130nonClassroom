@@ -5,9 +5,11 @@ import 'package:week9workshop/widgets/chart.dart';
 import 'package:week9workshop/widgets/new_expense.dart';
 import 'package:week9workshop/widgets/expenses_list.dart';
 
+/// Main expenses screen that reads Provider state and opens the add form.
 class Expenses extends StatelessWidget {
   const Expenses({super.key});
 
+  /// Opens a nearly full-height bottom sheet for entering a new expense.
   void _openAddExpenseOverlay(BuildContext context) {
     showModalBottomSheet(
       context: context,

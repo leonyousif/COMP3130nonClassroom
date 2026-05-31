@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:week9workshop/expenses.dart';
 import 'package:week9workshop/models/expenses_state.dart';
 
+/// Starts the Week 9 app and provides shared expense state to the widget tree.
 void main() {
   const lightColorScheme = ColorScheme(
     brightness: Brightness.light,

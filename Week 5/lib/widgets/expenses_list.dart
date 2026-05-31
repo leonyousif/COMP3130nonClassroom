@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travelexpenses/models/expense_model.dart';
 import 'package:travelexpenses/widgets/expenses_item.dart';
 
+/// Displays all expenses in a scrollable list.
 class ExpensesList extends StatelessWidget {
   final List<Expense> allExpenses;
 

@@ -2,8 +2,10 @@ import 'package:uuid/uuid.dart';
 
 const uuid = Uuid();
 
+/// Expense categories used to group each expense.
 enum Category { food, stay, experience, shopping }
 
+/// Data model for one expense item.
 class Expense {
   final String id;
   final String name;

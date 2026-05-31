@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+/// Login/register screen backed by Firebase Authentication.
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
 
@@ -29,6 +30,7 @@ class _AuthScreenState extends State<AuthScreen> {
     super.dispose();
   }
 
+  /// Switches between login mode and account creation mode.
   void _toggleMode() {
     setState(() {
       // Switches between the login and register versions of the same screen.
@@ -37,6 +39,7 @@ class _AuthScreenState extends State<AuthScreen> {
     });
   }
 
+  /// Validates the form and then signs in or creates a Firebase user.
   Future<void> _submit() async {
     // Stop here if any TextFormField validator returns an error message.
     final isValid = _formKey.currentState!.validate();
@@ -87,6 +90,7 @@ class _AuthScreenState extends State<AuthScreen> {
     }
   }
 
+  /// Ensures the email field contains a usable address.
   String? _validateEmail(String? value) {
     final email = value?.trim() ?? '';
 
@@ -97,6 +101,7 @@ class _AuthScreenState extends State<AuthScreen> {
     return null;
   }
 
+  /// Ensures the password is long enough for Firebase authentication.
   String? _validatePassword(String? value) {
     final password = value ?? '';
 
@@ -107,6 +112,7 @@ class _AuthScreenState extends State<AuthScreen> {
     return null;
   }
 
+  /// Ensures the repeated registration password matches the original.
   String? _validateRepeatPassword(String? value) {
     final repeatPassword = value ?? '';
 

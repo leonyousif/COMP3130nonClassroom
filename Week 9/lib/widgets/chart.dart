@@ -2,18 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:week9workshop/models/expense_model.dart';
 import 'package:week9workshop/widgets/chart_bar.dart';
 
+/// Groups expenses by category so the chart can total each bucket.
 class ChartBucket {
   const ChartBucket({
     required this.category,
     required this.expenses,
   });
 
+  /// Builds a bucket by filtering all expenses for one category.
   ChartBucket.forCategory(List<Expense> allExpenses, this.category)
       : expenses = allExpenses.where((expense) => expense.category == category).toList();
 
   final Category category;
   final List<Expense> expenses;
 
+  /// Calculates the total amount spent in this category bucket.
   double get totalExpenses {
     double sum = 0;
 
@@ -25,11 +28,13 @@ class ChartBucket {
   }
 }
 
+/// Displays category spending as proportional vertical chart bars.
 class Chart extends StatelessWidget {
   const Chart({super.key, required this.expenses});
 
   final List<Expense> expenses;
 
+  /// Creates one chart bucket per expense category.
   List<ChartBucket> get buckets {
     return [
       ChartBucket.forCategory(expenses, Category.food),
@@ -39,6 +44,7 @@ class Chart extends StatelessWidget {
     ];
   }
 
+  /// Finds the largest bucket total so bars can be scaled consistently.
   double get maxTotalExpense {
     double maxTotalExpense = 0;
 
