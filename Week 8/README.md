@@ -1,23 +1,28 @@
-# Week 8
+# Week 8 Workshop
 
-This folder contains the Week 8 workshop Flutter project in the nested `week8workshop` folder.
+This Flutter project continues the travel expenses app and introduces shared state management with Provider.
 
 ## What It Includes
 
-- Provider-based expense state management
-- A travel expenses screen with chart and list sections
-- A modal bottom sheet for adding new expenses
-- Reusable chart, list, item, and form widgets
+- `ExpensesState` as a `ChangeNotifier` model
+- Expense list and card widgets connected to provider state
+- Chart and chart bar widgets for visualising expenses
+- A bottom-sheet form for adding expenses
+- Material 3 app styling
 
-## Project Folder
+## Main Files
 
-Open `week8workshop` before running Flutter commands:
-
-```powershell
-cd "Week 8\week8workshop"
-```
+- `lib/main.dart`: app entry point and provider setup
+- `lib/expenses.dart`: main expenses screen
+- `lib/models/expenses_state.dart`: shared expense state
+- `lib/widgets/chart.dart`: chart display
+- `lib/widgets/new_expense.dart`: add-expense form
 
 ## Revisions
 
-- Added a top-level README explaining that the Flutter project is inside `week8workshop`.
-- Documented the Week 8 Provider-based expense app structure.
+- Moved the Flutter project files directly into the `Week 8` folder so the weekly structure is consistent with the other workshop folders.
+- Renamed the project package from the old Week 6 package name to `week8workshop`.
+- Updated internal imports so Week 8 no longer references another week's package.
+- Fixed the generated widget test so it matches the Week 8 app.
+- Removed unused imports and deprecated theme settings reported by Flutter analysis.
+- Added documentation comments for Provider state, charting, forms, lists, cards, and delete actions.
