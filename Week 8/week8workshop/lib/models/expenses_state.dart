@@ -1,7 +1,7 @@
 import 'dart:collection';
 
 import 'package:flutter/material.dart';
-import 'package:week6workshop/models/expense_model.dart';
+import 'package:week8workshop/models/expense_model.dart';
 
 class ExpensesState extends ChangeNotifier {
   final List<Expense> _expenses = [

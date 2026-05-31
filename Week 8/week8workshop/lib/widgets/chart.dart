@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:week6workshop/models/expense_model.dart';
-import 'package:week6workshop/widgets/chart_bar.dart';
+import 'package:week8workshop/models/expense_model.dart';
+import 'package:week8workshop/widgets/chart_bar.dart';
 
 class ChartBucket {
   const ChartBucket({

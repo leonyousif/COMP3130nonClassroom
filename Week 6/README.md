@@ -1,17 +1,21 @@
-# week6workshop
+# Week 6
 
-A new Flutter project.
+This folder contains the Week 6 Flutter workshop project, building on the travel expenses app from Week 5.
 
-## Getting Started
+## What It Includes
 
-This project is a starting point for a Flutter application.
+- A travel expenses list with starter expenses
+- An `AppBar` with an add button
+- A modal bottom sheet for adding a new expense
+- Text input for expense title and amount
+- Date picker support for selecting an expense date
+- Expense cards rendered through reusable list and item widgets
 
-A few resources to get you started if this is your first Flutter project:
+## Main Files
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `lib/main.dart`: app entry point and theme setup
+- `lib/expenses.dart`: main screen and expense list state
+- `lib/models/expense_model.dart`: expense model, categories, and date formatting
+- `lib/widgets/new_expense.dart`: form for adding a new expense
+- `lib/widgets/expenses_list.dart`: expense list widget
+- `lib/widgets/expenses_item.dart`: expense card widget

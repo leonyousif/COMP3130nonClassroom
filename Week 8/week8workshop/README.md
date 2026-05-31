@@ -1,17 +1,19 @@
-# week6workshop
+# Week 8 Workshop
 
-A new Flutter project.
+This Flutter project continues the travel expenses app and introduces shared state management with Provider.
 
-## Getting Started
+## What It Includes
 
-This project is a starting point for a Flutter application.
+- `ExpensesState` as a `ChangeNotifier` model
+- Expense list and card widgets connected to provider state
+- Chart and chart bar widgets for visualising expenses
+- A bottom-sheet form for adding expenses
+- Material 3 app styling
 
-A few resources to get you started if this is your first Flutter project:
+## Main Files
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `lib/main.dart`: app entry point and provider setup
+- `lib/expenses.dart`: main expenses screen
+- `lib/models/expenses_state.dart`: shared expense state
+- `lib/widgets/chart.dart`: chart display
+- `lib/widgets/new_expense.dart`: add-expense form

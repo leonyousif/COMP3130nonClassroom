@@ -1,16 +1,27 @@
-# flutter_application_1
+# COMP3130 Weekly Workshops
 
-A new Flutter project.
+This repository stores weekly workshop work for COMP3130. Most folders are separate Flutter workshop projects, while some weeks contain research, analysis, or design artifacts used for class activities.
 
-## Getting Started
+## Repository Structure
 
-This project is a starting point for a Flutter application.
+```text
+COMP3130nonClassroom/
+|-- Week 1/        Basic Flutter screen/widget exercises
+|-- Week 2/        Workshop image/prototype artifacts
+|-- Week 3/        Duolingo UX survey and analysis work
+|-- Week 5/        Travel expenses Flutter app basics
+|-- Week 6/        Travel expenses app with add-expense form
+|-- Week 8/        Travel expenses app with provider state and charting
+|-- Week 9/        Travel expenses app with shared calculations/state
+|-- Week 10/       Travel expenses app with Firebase authentication
+|-- lib/           Earlier root-level Flutter source scaffold
+`-- windows/       Earlier root-level Flutter Windows scaffold
+```
 
-A few resources to get you started if this is your first Flutter project:
+Each week folder has its own README describing what that folder contains. For Flutter weeks, open a terminal in that week's project folder before running Flutter commands.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Notes
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- The weekly folders are intentionally kept separate so each workshop can be reviewed independently.
+- Some Flutter folders include generated platform files such as `android`, `ios`, `web`, `windows`, `macos`, and `linux`.
+- Week 8 contains its Flutter project inside `Week 8/week8workshop`.

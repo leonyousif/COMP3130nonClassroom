@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:week6workshop/models/expenses_state.dart';
-import 'package:week6workshop/widgets/chart.dart';
-import 'package:week6workshop/widgets/new_expense.dart';
-import 'package:week6workshop/widgets/expenses_list.dart';
+import 'package:week8workshop/models/expenses_state.dart';
+import 'package:week8workshop/widgets/chart.dart';
+import 'package:week8workshop/widgets/new_expense.dart';
+import 'package:week8workshop/widgets/expenses_list.dart';
 
 class Expenses extends StatelessWidget {
   const Expenses({super.key});

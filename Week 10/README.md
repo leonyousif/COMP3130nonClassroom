@@ -1,17 +1,20 @@
-# week6workshop
+# Week 10
 
-A new Flutter project.
+This folder contains the Week 10 Flutter workshop project. It extends the travel expenses app with Firebase authentication.
 
-## Getting Started
+## What It Includes
 
-This project is a starting point for a Flutter application.
+- Firebase initialization through `firebase_options.dart`
+- Login and registration UI
+- Firebase Authentication sign-in and account creation
+- An auth gate that switches between the auth screen and expenses app
+- Provider-managed expense state
+- Light and dark Material 3 themes
 
-A few resources to get you started if this is your first Flutter project:
+## Main Files
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `lib/main.dart`: Firebase setup, app theme, provider setup, and auth gate
+- `lib/auth_screen.dart`: login/register form and Firebase auth calls
+- `lib/firebase_options.dart`: generated Firebase configuration
+- `lib/expenses.dart`: authenticated expenses screen
+- `lib/models/expenses_state.dart`: shared expense state

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:week6workshop/expenses.dart';
-import 'package:week6workshop/models/expenses_state.dart';
+import 'package:week8workshop/expenses.dart';
+import 'package:week8workshop/models/expenses_state.dart';
 
 void main() {
   const lightColorScheme = ColorScheme(
