@@ -71,7 +71,6 @@ void main() {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData().copyWith(
-          useMaterial3: true,
           colorScheme: lightColorScheme,
           scaffoldBackgroundColor: lightColorScheme.surface,
           appBarTheme: AppBarTheme().copyWith(
@@ -102,7 +101,6 @@ void main() {
               ),
         ),
         darkTheme: ThemeData.dark().copyWith(
-          useMaterial3: true,
           colorScheme: darkColorScheme,
           scaffoldBackgroundColor: darkColorScheme.surface,
           appBarTheme: AppBarTheme().copyWith(

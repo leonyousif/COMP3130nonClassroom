@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:week8workshop/models/expense_model.dart';
 import 'package:week8workshop/models/expenses_state.dart';
 import 'package:week8workshop/widgets/expenses_item.dart';
 
